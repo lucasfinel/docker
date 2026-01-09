@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: DOCKERHUB_USERNAME/hello-docker:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/hello-docker:latest
